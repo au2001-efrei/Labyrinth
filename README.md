@@ -42,8 +42,8 @@ The file `labyrinth3_1.py` also contains other functionalities:
 A Graphical User Interface proof of concept was also created in the file `labyrinth3_1.py`, which allows the selection of the size of the labyrinth, the entry and exit points and the resolution of the labyrinth by the user or the computer automatically. Unfortunately, the technologies used (Tkinter) does not provide a fast enough rendering engine, making the game generally very slow. This could be fixed by switching to another library, or by reusing existing components on the screen such as the cells in the labyrinth, and only changing their content.
 
 A `benchmark.py` is included and allows to compare the three different types of pathfinding algorithms. Here is a sample output:
-> Algorithm 1: 5101.000000 average cells explored, 264.752000 average path length, 0.026539 average execution time
-> Algorithm 2: 4948.308000 average cells explored, 264.752000 average path length, 0.026494 average execution time
+> Algorithm 1: 5101.000000 average cells explored, 264.752000 average path length, 0.026539 average execution time\
+> Algorithm 2: 4948.308000 average cells explored, 264.752000 average path length, 0.026494 average execution time\
 > Algorithm 3: 1353.812000 average cells explored, 446.236000 average path length, 0.007047 average execution time
 
 The last algorithm, the right-hand one, is almost 4 times faster than the other two on average, but does not guarantee to find the shortest path in a maze with cycles. The two others are almost equivalent, with a slight speed increase in the second, as it stops as soon as it finds the exit rather than explore the entire maze each time.
